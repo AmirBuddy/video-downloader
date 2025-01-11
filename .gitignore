@@ -1,2 +1,4 @@
-.venv
-video_segments*
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
