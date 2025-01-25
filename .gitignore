@@ -2,3 +2,7 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+output_video.mp4
+segments.txt
+file_list.txt
+downloaded_segments/
