@@ -44,6 +44,19 @@ This script allows you to download videos in segments, which are useful when dea
    
 ## `.m3u8` Links and HLS Streaming
 
+### Introduction to HLS, M3U8, and FFmpeg
+- **HLS (HTTP Live Streaming):**:
+
+      HLS is a streaming communication protocol created by Apple. It is used for delivering audio and video content over HTTP. HLS breaks the video into small chunks (usually 10-15 seconds) that are sent to the client and played back in real-time. This allows for adaptive bitrate streaming where the client can switch between different video qualities based on the available bandwidth.
+
+- **M3U8:**:
+
+      M3U8 is a file format used by HLS for listing the video segments. It contains URLs pointing to the segments of the video (often in .ts format). The file itself is a text file formatted in a specific way, listing different streams and media segments.
+
+- **FFmpeg:**
+
+      FFmpeg is a powerful multimedia framework used for decoding, encoding, transcoding, muxing, demuxing, streaming, and playing almost any type of multimedia content. In this project, it is used for concatenating the video segments (in .ts format) into a single playable video file.
+
 ### What is `.m3u8`?
 
 `.m3u8` is a playlist file format used for HTTP Live Streaming (HLS). It is used to define the video segments that make up a video stream. 
@@ -90,7 +103,7 @@ In this example:
 You can install the required packages using `pip`:
 
 ```bash
-pip install requests beautifulsoup4 m3u8 tqdm
+pip install -r requirements.txt
 ```
 
 ## How to Use
