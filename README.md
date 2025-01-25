@@ -1,4 +1,4 @@
-# Video Ripper
+# Video Downloader
 
 ## Description
 
